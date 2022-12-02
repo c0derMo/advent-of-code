@@ -12,3 +12,4 @@ Written in whatever language I fancy that day. Probably gonna be Python, TypeScr
 | Day | Language |
 | --- | -------- |
 |  1  | Python   |
+|  2  | Python   |
