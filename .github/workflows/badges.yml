@@ -14,6 +14,7 @@ jobs:
         with:
           userid: 962375
           session: ${{ secrets.AOC_SESSION }}
+          leaderboard: 'https://adventofcode.com/2020/leaderboard/private/view/2418877.json'
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update badges
