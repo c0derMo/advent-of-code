@@ -1,0 +1,20 @@
+name: Update AoC Badges
+on:
+  schedule:
+    - cron: '29 10 1-25 12 *'
+  workflow_dispatch:
+  push:
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2                # clones your repo
+          
+      - uses: joblo2213/aoc-badges-action@v3
+        with:
+          userid: 962375
+          session: ${{ secrets.AOC_SESSION }}
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update badges
+          file_pattern: README.md
