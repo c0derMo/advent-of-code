@@ -1,3 +1,4 @@
 .env
 .aoc/SESSION_TOKEN
 __pycache__
+.venv
