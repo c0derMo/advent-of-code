@@ -1,21 +1,31 @@
 import subprocess
 import time
 
-def runDay(day, console):
-    runTask(day, 1, console)
-    runTask(day, 2, console)
+def runDay(day, console, lang):
+    if lang.hasIndividualTaskRunCommands():
+        runTask(day, 1, console, lang)
+        runTask(day, 2, console, lang)
+    else:
+        runTask(day, -1, console, lang)
 
-def testDay(day, console):
-    runTask(day, 1, console, True)
-    runTask(day, 2, console, True)
+def testDay(day, console, lang):
+    if lang.hasIndividualTaskRunCommands():
+        runTask(day, 1, console, lang, True)
+        runTask(day, 2, console, lang, True)
+    else:
+        runTask(day, -1, console, lang, True)
 
-def runTask(day, task, console, test=False):
-    console.rule(f"[yellow]Task {task}")
+def runTask(day, task, console, lang, test=False):
+    if task >= 0:
+        console.rule(f"[yellow]Task {task}")
+    else:
+        console.rule("[yellow]All tasks")
     startTime = time.time()
-    cmd = ["python", "-u", f"./src/day{str(day).rjust(2, '0')}/runner.py", str(task)]
     if test:
-        cmd.append("test")
-    p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        cmd = lang.getTestCommand(day, task, f"./src/day{str(day).rjust(2, '0')}")
+    else:
+        cmd = lang.getRunCommand(day, task, f"./src/day{str(day).rjust(2, '0')}")
+    p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
     buf = b""
     while p.poll() is None:

@@ -5,7 +5,7 @@ import shutil
 AOC_BASE_URL = "https://adventofcode.com"
 AOC_YEAR = 2022
 
-def makeNewDay(day, console):
+def makeNewDay(day, console, lang):
     newDirectoryPath = f"src/day{str(day).rjust(2, '0')}"
 
     # Create new directory
@@ -13,9 +13,9 @@ def makeNewDay(day, console):
         os.mkdir(newDirectoryPath)
     console.log(f"Created directory {newDirectoryPath}.")
 
-    # Copy files - just python for now
-    shutil.copytree(".aoc/file_templates/python/", newDirectoryPath + "/", dirs_exist_ok=True)
-    console.log("Copied [dodger_blue1]python[/dodger_blue1] template.")
+    # Copy files
+    shutil.copytree(lang.getTemplateDirectory(), newDirectoryPath + "/", dirs_exist_ok=True)
+    console.log(f"Copied {lang.getFormattedName()} template.")
 
 def getInput(day, console):
     if not os.path.exists(".aoc/SESSION_TOKEN"):
