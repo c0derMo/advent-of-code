@@ -1,6 +1,7 @@
 import os
 from rich.console import Console
 from task import task1, task2
+import sys
 
 def parseInput(inputFilePath):
     file = open(inputFilePath)
@@ -13,15 +14,25 @@ def parseInput(inputFilePath):
 
 if __name__ == "__main__":
     console = Console()
-    inputFile = os.path.dirname(__file__) + "/input"
+
+    if len(sys.argv) <= 2 or sys.argv[2] == "main":
+        inputFile = os.path.dirname(__file__) + "/input"
+    elif sys.argv[2] == "test":
+        inputFile = os.path.dirname(__file__) + "/test"
+        if not os.path.exists(inputFile):
+            console.print("Test file doesn't exist!")
+            exit(1)
     lines = parseInput(inputFile)
-    print("Running task 1:")
-    try:
-        task1(lines)
-    except Exception:
-        console.print_exception()
-    print("Running task 2:")
-    try:
-        task2(lines)
-    except Exception:
-        console.print_exception()
+
+    if len(sys.argv) <= 1 or sys.argv[1] == "1":
+        try:
+            task1(lines)
+        except Exception:
+            console.print_exception()
+            exit(1)
+    if len(sys.argv) <= 1 or sys.argv[1] == "2":
+        try:
+            task2(lines)
+        except Exception:
+            console.print_exception()
+            exit(1)

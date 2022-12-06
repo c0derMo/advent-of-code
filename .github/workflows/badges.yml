@@ -1,7 +1,5 @@
 name: Update AoC Badges
 on:
-  schedule:
-    - cron: '29 10 1-25 12 *'
   workflow_dispatch:
   push:
 jobs:
