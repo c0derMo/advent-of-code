@@ -1,9 +1,9 @@
 # Advent of Code 2022
 > WARNING! Spoilers ahead.
 
-![](https://img.shields.io/badge/day%20📅-9-blue)
-![](https://img.shields.io/badge/stars%20⭐-18-yellow)
-![](https://img.shields.io/badge/days%20completed-9-red)
+![](https://img.shields.io/badge/day%20📅-10-blue)
+![](https://img.shields.io/badge/stars%20⭐-20-yellow)
+![](https://img.shields.io/badge/days%20completed-10-red)
 
 Written in whatever language I fancy that day. Probably gonna be Python, TypeScript or Java.
 
