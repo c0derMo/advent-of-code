@@ -1,13 +1,11 @@
-# Advent of Code 2022
-> WARNING! Spoilers ahead.
+# Advent of Code
 
-![](https://img.shields.io/badge/day%20📅-17-blue)
+Contains all my solutions for advent of code over the years. Started actively in 2022.
+
+## 2022
+
 ![](https://img.shields.io/badge/stars%20⭐-32-yellow)
 ![](https://img.shields.io/badge/days%20completed-16-red)
-
-Written in whatever language I fancy that day. Probably gonna be Python, TypeScript or Java.
-
-## Days & Languages
 
 | Day | Language |
 | --- | -------- |
