@@ -2,6 +2,12 @@
 
 Contains all my solutions for advent of code over the years. Started actively in 2022.
 
+## 2023
+
+| Day | Language |
+| --- | -------- |
+|  1  | Haskell  |
+
 ## 2022
 
 ![](https://img.shields.io/badge/stars%20⭐-32-yellow)
