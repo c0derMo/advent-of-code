@@ -7,6 +7,7 @@ Contains all my solutions for advent of code over the years. Started actively in
 | Day | Language |
 | --- | -------- |
 |  1  | Haskell  |
+|  2  | Haskell  |
 
 ## 2022
 

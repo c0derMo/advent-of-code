@@ -5,3 +5,5 @@ __pycache__
 .DS_Store
 aoc-cli
 aoc-cli-config.json
+*.in
+*.out
