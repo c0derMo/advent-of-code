@@ -9,6 +9,7 @@ Contains all my solutions for advent of code over the years. Started actively in
 |  1  | Haskell  |
 |  2  | Haskell  |
 |  3  | Python   |
+|  4  | Python   |
 
 ## 2022
 
