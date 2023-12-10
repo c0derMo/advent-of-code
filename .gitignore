@@ -7,3 +7,4 @@ aoc-cli
 aoc-cli-config.json
 *.in
 *.out
+aoc
