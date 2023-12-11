@@ -9,3 +9,5 @@ aoc-cli-config.json
 *.out
 aoc
 20**/**/*.md
+20**/**/input
+20**/**/test
