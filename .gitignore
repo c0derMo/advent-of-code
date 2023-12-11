@@ -8,3 +8,4 @@ aoc-cli-config.json
 *.in
 *.out
 aoc
+20**/**/*.md
