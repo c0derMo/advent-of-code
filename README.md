@@ -4,19 +4,21 @@ Contains all my solutions for advent of code over the years. Started actively in
 
 ## 2023
 
-| Day | Language |
-| --- | -------- |
-|  1  | Haskell  |
-|  2  | Haskell  |
-|  3  | Python   |
-|  4  | Python   |
-|  5  | Python   |
-|  6  | Python   |
-|  7  | Python   |
-|  8  | Python   |
-|  9  | Python   |
-| 10  | Python   |
-| 11  | Python   |
+| Day | Language                             |
+| --- | ------------------------------------ |
+|  1  | Haskell                              |
+|  2  | Haskell                              |
+|  3  | Python                               |
+|  4  | Python                               |
+|  5  | Python                               |
+|  6  | Python                               |
+|  7  | Python                               |
+|  8  | Python                               |
+|  9  | Python                               |
+| 10  | Python                               |
+| 11  | Python                               |
+| 12  | None yet, my laptop died that day :( |
+| 13  | Python                               |
 
 ## 2022
 
