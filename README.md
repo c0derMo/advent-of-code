@@ -20,6 +20,7 @@ Contains all my solutions for advent of code over the years. Started actively in
 | 12  | Python, and help of [this](https://www.reddit.com/r/adventofcode/comments/18hbbxe/2023_day_12python_stepbystep_tutorial_with_bonus/) for task 2 |
 | 13  | Python                                                                                                                                          |
 | 14  | Python                                                                                                                                          |
+| 15  | Python                                                                                                                                          |
 
 ## 2022
 
