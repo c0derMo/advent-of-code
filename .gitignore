@@ -7,7 +7,7 @@ aoc-cli
 aoc-cli-config.json
 *.in
 *.out
-aoc
+aoc*
 20**/**/*.md
 20**/**/input
 20**/**/test
