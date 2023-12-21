@@ -26,6 +26,7 @@ Contains all my solutions for advent of code over the years. Started actively in
 | 18  | Python                                                                                                                                          |
 | 19  | Python                                                                                                                                          |
 | 20  | Python                                                                                                                                          |
+| 21  | Python                                                                                                                                          |
 
 ## 2022
 
