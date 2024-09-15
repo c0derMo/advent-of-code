@@ -15,15 +15,11 @@ def task2(input_lines: list[str]):
     pw = ["_","_","_","_","_","_","_","_"]
     door_id = input_lines[0]
     while "_" in pw:
-        h, next_idx = get_hash_starting_with_5_zeros(door_id, start_idx)
-        if h[5] not in ["0", "1", "2", "3", "4", "5", "6", "7"]:
-            continue
-        pos = int(h[5])
-        if pw[pos] != "_":
-            continue
-        pw[pos] = h[6]
-        start_idx = next_idx + 1
-        print("".join(pw))
+        h = hashlib.md5((door_id + str(start_idx)).encode()).hexdigest()
+        if h.startswith("00000") and h[5] in "01234567" and pw[int(h[5])] == "_":
+            pw[int(h[5])] = h[6]
+            print("".join(pw))
+        start_idx += 1
 
 def get_hash_starting_with_5_zeros(door_id: str, starting_index: int) -> tuple[str, int]:
     idx = starting_index
